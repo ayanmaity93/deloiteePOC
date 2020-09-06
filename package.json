@@ -14,6 +14,14 @@
       {
         "staticPath": "products.json",
         "staticOutDir": ""
+      },
+      {
+        "staticPath": "productDetails.json",
+        "staticOutDir": ""
+      },
+      {
+        "staticPath": "assets/Images/Items",
+        "staticOutDir": "Images/Items"
       }
     ]
   },

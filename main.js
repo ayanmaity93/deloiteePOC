@@ -35,7 +35,7 @@ function getTemplate(){
     var templateUrl;
     switch(location.hash){
         case '#detail': templateUrl = "./assets/Templates/detailedItem.html";
-            init = window.homeInit;
+            init = window.detailedInit;
             break;
         case '#home': templateUrl = "./assets/Templates/homepage.html";
             init = window.homeInit;
