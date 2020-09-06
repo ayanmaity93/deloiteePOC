@@ -2,18 +2,23 @@ var init;
 location.hash = "home";
 
 window.doServiceCall = function doServiceCall (url, successCallback){
+    document.getElementById('loader').classList.remove("d-none");
+    document.getElementById('loader').classList.add("d-block");
+
     var xhtp = new XMLHttpRequest();
 
     xhtp.onreadystatechange = function() 
     {
         if (this.readyState == 4 ) 
         {
-           if(this.status == 200){
-               successCallback(this.responseText);
-           }
-           else {
-               alert('Error');
-           }
+            document.getElementById('loader').classList.add("d-none");
+            document.getElementById('loader').classList.remove("d-block");
+            if(this.status == 200){
+                successCallback(this.responseText);
+            }
+            else {
+                document.getElementById('mainFailure').innerHTML = "Sorry, something went wrong. Please try again later."
+            }
         }
     }
 

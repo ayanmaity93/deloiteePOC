@@ -45,3 +45,10 @@ body {
 .margin-bottom10 {
   margin-bottom: 10px;
 }
+
+#loader {
+  position: fixed;
+  z-index: 999;
+  top: 40%;
+  left: 50%;
+}
