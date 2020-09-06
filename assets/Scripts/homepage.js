@@ -52,4 +52,14 @@ function showData(data){
 
 window.homeInit = function homeInit(){
     window.doServiceCall('products.json', showData);
+    document.getElementById('filterIconID').addEventListener("click", function(){
+        if(document.getElementById('filterBlock').classList.contains("d-none")){
+            document.getElementById('filterBlock').classList.remove("d-none");
+            document.getElementById('filterBlock').classList.add("d-block");
+        } else {
+            document.getElementById('filterBlock').classList.add("d-none");
+            document.getElementById('filterBlock').classList.remove("d-block");
+        }
+    });
 }
+

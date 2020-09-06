@@ -52,3 +52,20 @@ body {
   top: 40%;
   left: 50%;
 }
+
+.custom-dropdown {
+  display: block;
+  border-bottom: 1px solid $color-gray;
+  margin-bottom: 10px;
+
+  .btn {
+    background: none;
+    color: black;
+    text-align: left;
+    border: none;
+    
+    &:nth-child(1){
+      width: 80%;
+    }
+  }
+}
