@@ -1,9 +1,11 @@
-@import 'normalize';
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 
 $badass: #bada55;
 body { 
   margin: 0; 
-  background-color: $badass; 
+}
+
+.half-width {
+  width: 50%;
 }
