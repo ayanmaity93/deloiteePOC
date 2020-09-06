@@ -1,20 +1,22 @@
 {
-  "name": " ",
+  "name": "deloitee_poc",
   "version": "0.0.1",
   "description": "",
-  "keywords": "",
+  "keywords": [],
   "license": "",
   "author": "",
   "scripts": {
     "build": "npm run build-css && parcel build index.html",
     "dev": "npm run build-css && parcel index.html --open",
     "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss styles.scss styles.css"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2"
   }
 }
