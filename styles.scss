@@ -1,9 +1,71 @@
-@import 'normalize';
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'styleVariables.scss';
 
 
-$badass: #bada55;
 body { 
   margin: 0; 
-  background-color: $badass; 
+}
+
+#loadTemplate {
+  margin-top: 40px;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.product-item {
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  h6 {
+    margin-top: 10px;
+  }
+
+  .item-tag {
+    color: $color-gray;
+    font-size: $f-small;
+  }
+}
+
+.tag-grey-text {
+  color: $color-gray;
+  font-size: $f-small;
+  margin-bottom: 5px;
+}
+
+.big-text {
+  font-size: $f-large;
+}
+
+.margin-bottom10 {
+  margin-bottom: 10px;
+}
+
+#loader {
+  position: fixed;
+  z-index: 999;
+  top: 40%;
+  left: 50%;
+}
+
+.custom-dropdown {
+  display: block;
+  border-bottom: 1px solid $color-gray;
+  margin-bottom: 10px;
+
+  .btn {
+    background: none;
+    color: black;
+    text-align: left;
+    border: none;
+    
+    &:nth-child(1){
+      width: 80%;
+    }
+  }
 }

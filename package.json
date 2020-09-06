@@ -6,10 +6,24 @@
   "license": "",
   "author": "",
   "scripts": {
-    "build": "npm run build-css && parcel build index.html",
-    "dev": "npm run build-css && parcel index.html --open",
-    "start": "npm run build && npm run dev",
+    "start": "npm run build-css && parcel build *.html assets/Templates/*.html && parcel index.html --open",
     "build-css": "node-sass --include-path scss styles.scss styles.css"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "products.json",
+        "staticOutDir": ""
+      },
+      {
+        "staticPath": "productDetails.json",
+        "staticOutDir": ""
+      },
+      {
+        "staticPath": "assets/Images/Items",
+        "staticOutDir": "Images/Items"
+      }
+    ]
   },
   "devDependencies": {
     "node-sass": "^4.14.1",
@@ -17,6 +31,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.5.2",
+    "parcel-plugin-static-files-copy": "^2.5.0"
   }
 }
